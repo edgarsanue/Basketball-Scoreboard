@@ -1,0 +1,115 @@
+@font-face {
+    font-family:'Cursed Timer ULiL';
+    src: url('CursedTimerULiL') format('truetype');
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+    font-size: 62.5%; /* 16px */
+    --backGround-color: rgb(27, 36, 74);
+    --pannel-font-color: #F94F6D;
+    --number-bg-color: hsla(353, 100%, 2%, 1);
+    --btn-color: #9AABD8;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    
+    gap: 10rem;
+   
+    width: 57.5rem;
+    height: 38.5rem;
+    margin-inline: auto;
+
+    margin-top: 25rem;
+
+    background-color: var(--backGround-color);
+}
+
+#home-div,
+#guest-div 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    
+    color: white;
+}
+
+h3 {
+    width: 14.9rem;
+    height: 3.6rem;
+    top: 6.8rem;
+    left: 8.5rem;
+    
+    text-align: center;
+
+    font-family: Verdana;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 3.589rem;
+}
+
+h4 {
+    background-color: var(--number-bg-color);
+    
+    width: 15.5rem;
+    height: 12rem;
+    top: 12.5rem;
+    left: 8.2rem;
+    bottom: 14rem;
+    border-radius: .5rem;
+
+    margin-top: 2.1rem;
+
+    font-family: 'Cursed Timer ULiL';
+    font-size: 9rem;
+    line-height: 12.667rem;
+    text-align: center;
+    color: var(--pannel-font-color);
+    text-size-adjust: inherit;
+}
+
+#home-btns,
+#guest-btns {
+    display: flex;
+    align-items: center;
+    margin-top: 2.6rem;
+    gap: .9rem;  
+}
+
+button {
+    width: 4.5rem;
+    height: 4.5rem;
+
+    background-color: transparent;
+    border: solid .2rem var(--btn-color);
+    border-radius: .5rem;
+    
+    color: var(--btn-color);
+    font-family: 'Cursed Timer ULiL';
+    text-align: center;
+
+    font-size: 1.6rem;
+}
+
+button:active {
+    background-color: var(--btn-color);
+    color: var(--backGround-color);
+}
+
+
